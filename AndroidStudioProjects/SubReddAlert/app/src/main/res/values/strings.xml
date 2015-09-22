@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">SubReddAlert</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="add_sub">Add what SubReddit you want to track</string>
+    <string name="add_sub1">Add</string>
+    <string name="title_activity_subreddit">subreddit</string>
+    <string name="str_cnt_mnu_edit">Edit</string>
+    <string name="str_cnt_mnu_share">Share</string>
+    <string name="str_cnt_mnu_delete">Delete</string>
+    <string name="title_activity_letest_news">LetestNews</string>
+    <string name="top">Edit top posts amount</string>
+
+
+</resources>

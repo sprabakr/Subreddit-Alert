@@ -1,0 +1,54 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+
+
+    <EditText android:id="@+id/sub"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/add_sub"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="45dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:inputType="text"
+        android:imeOptions="actionSend"
+        android:maxLines="1"
+        android:imeActionLabel="@string/add_sub1"
+        android:digits="0,1,2,3,4,5,6,7,8,9,*,qwertzuiopasdfghjklyxcvbnmABCDEFGHIJKLMNOPRSTUVWXYZ"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/add_sub1"
+        android:id="@+id/button"
+        android:layout_below="@+id/sub"
+        android:layout_centerHorizontal="true"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View Subreddits"
+        android:id="@+id/viewsubs"
+        android:layout_below="@+id/button"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="133dp"
+        android:layout_alignEnd="@+id/sub" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Alerts"
+        android:id="@+id/button2"
+        android:layout_below="@+id/viewsubs"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="43dp" />
+
+
+</RelativeLayout>
