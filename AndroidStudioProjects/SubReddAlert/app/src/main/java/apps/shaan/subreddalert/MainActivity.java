@@ -1,5 +1,6 @@
 package apps.shaan.subreddalert;
 
+import android.app.Activity;
 import android.content.ComponentName;
 import android.content.ContentValues;
 import android.content.Context;
@@ -9,9 +10,7 @@ import android.content.SharedPreferences;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.AsyncTask;
 import android.os.IBinder;
-import android.support.v4.view.ViewPager;
-import android.support.v7.app.ActionBar;
-import android.support.v7.app.ActionBarActivity;
+
 import android.os.Bundle;
 import android.text.Editable;
 import android.util.Log;
@@ -45,27 +44,17 @@ import java.io.Serializable;
 
 
 import android.database.sqlite.SQLiteDatabase;
-import android.support.v7.widget.Toolbar;
 
 import org.apache.http.HttpResponse;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.impl.client.DefaultHttpClient;
 
-public class MainActivity extends ActionBarActivity {
-    private SubService s;
-    Toolbar toolbar;
-    ViewPager pager;
-    ViewPagerAdapter adapter;
-    SlidingTabLayout tabs;
-    CharSequence Titles[]={"Home","Events"};
-    int Numboftabs =2;
+public class MainActivity  extends Activity  {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        String FILENAME="subreddit";
-        String string="hello";
         Button add=(Button)findViewById(R.id.button);
         Button viewSubs=(Button)findViewById(R.id.viewsubs);
         Button viewAlerts=(Button)findViewById(R.id.button2);
@@ -90,9 +79,6 @@ public class MainActivity extends ActionBarActivity {
         });
 
 
-
-        ActionBar actionBar = getSupportActionBar();
-        actionBar.hide();
         final EditText editText = (EditText) findViewById(R.id.sub);
         add.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
@@ -116,7 +102,7 @@ public class MainActivity extends ActionBarActivity {
                     FileOutputStream subO = openFileOutput("subs.txt", MODE_APPEND);
                     subO.close();
                     String string="";
-                    int d;
+
 
                     FileInputStream fin = openFileInput("subs.txt");
                     BufferedReader input = new BufferedReader(new InputStreamReader(fin, "UTF-8"));
