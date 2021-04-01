@@ -1,4 +1,4 @@
-package apps.shaan.subreddalert;
+package com.example.newsubredditalert;
 
 import java.util.ArrayList;
 
