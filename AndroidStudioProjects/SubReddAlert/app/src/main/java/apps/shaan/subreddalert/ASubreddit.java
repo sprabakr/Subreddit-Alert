@@ -11,9 +11,6 @@ import java.io.InputStreamReader;
 import java.net.URL;
 import java.util.ArrayList;
 
-/**
- * Created by shaan on 6/25/15.
- */
 public class ASubreddit {
     int topAmount;
     String name;

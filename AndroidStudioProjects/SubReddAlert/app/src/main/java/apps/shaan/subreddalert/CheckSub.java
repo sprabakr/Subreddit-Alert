@@ -8,9 +8,6 @@ import android.content.Intent;
 
 import java.util.Calendar;
 
-/**
- * Created by shaan on 6/27/15.
- */
 public class CheckSub extends BroadcastReceiver {
     private static final long REPEAT_TIME = 1000 * 30;
 

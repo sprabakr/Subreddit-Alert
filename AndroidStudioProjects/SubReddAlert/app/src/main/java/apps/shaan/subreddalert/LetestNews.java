@@ -1,7 +1,7 @@
 package apps.shaan.subreddalert;
 
 import android.content.Intent;
-import android.support.v7.app.ActionBarActivity;
+
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
@@ -50,20 +50,6 @@ public class LetestNews extends ExpandableListActivity{
 
         adapter.setInflater((LayoutInflater) getSystemService(Context.LAYOUT_INFLATER_SERVICE), this);
         expandableList.setAdapter(adapter);
-        //expandableList.setOnChildClickListener(this);
-       /* expandableList.setOnChildClickListener(new ExpandableListView.OnChildClickListener() {
-
-
-            public boolean onChildClick(ExpandableListView parent, View v,int groupPosition, int childPosition, long id) {
-
-
-                Toast.makeText(getBaseContext(), "Shaan is a monkey",
-                        Toast.LENGTH_SHORT).show();
-
-                return true;  // i missed this
-            }
-        });*/
-
 
 
     }

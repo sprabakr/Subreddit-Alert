@@ -41,8 +41,7 @@ public class SubService extends Service {
     public int onStartCommand(Intent intent,int flags,int startId) {
         // Normally we would do some work here, like download a file.
         // For our sample, we just sleep for 5 seconds.
-        Log.i("hi", "hi");
-        Log.i("hello", "ello");
+
         new Thread(new Runnable() {
             @Override
             public void run() {
